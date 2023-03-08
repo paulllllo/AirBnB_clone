@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+"""A class that defines the properties of a state"""
+from models.base_model import BaseModel
+
+class U`-BN(BaseModel):`-bn"""Public class attributes"""
+-BN    email: ""-bn-bn
+-bn password: ""
+-bn    first_name: ""
+    last_name: ""

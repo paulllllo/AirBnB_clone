@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+"""A class that defines the properties of a city"""
+from models.base_model import BaseModel
+
+class City(BaseModel):
+    """Public class attributes"""
+    first_name: ""
+    last_name: ""
