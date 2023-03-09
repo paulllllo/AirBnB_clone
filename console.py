@@ -21,7 +21,7 @@ class HBNBCommand(cmd.Cmd):
         """creates an instance of the classname"""
         if  not classname:
             return print("** class name missing **")
-        if not instantiators[classname]:
+        if not classname in  instantiators:
             return print("** class doesn't exist **")
         else:
             new_base = instantiators[classname]()
