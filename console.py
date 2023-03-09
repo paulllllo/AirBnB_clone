@@ -3,11 +3,14 @@
 import cmd
 
 """import classes used"""
-from models.base_model import BaseModel
+from models import base_model, place, state, city, amenity, review, user
 import models
 
 """Instantiators - a dictionary containing all classes"""
-instantiators = {"BaseModel": BaseModel}
+instantiators = {"BaseModel": base_model.BaseModel, "Place": place.Place,
+                 "State": state.State, "City": city.City,
+                 "Amenity": amenity.Amenity, "Review": review.Review,
+                 "User": user.User}
 
 class HBNBCommand(cmd.Cmd):
     """Command interpreter for the hbnb website"""
@@ -22,6 +25,7 @@ class HBNBCommand(cmd.Cmd):
             return print("** class doesn't exist **")
         else:
             new_base = instantiators[classname]()
+            new_base.save()
             print(new_base.id)
 
     def do_show(self, line):

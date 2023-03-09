@@ -2,9 +2,7 @@
 """A class that defines the properties of a user"""
 from models.base_model import BaseModel
 
-class User(BaseModel):
+class City(BaseModel):
     """Public class attributes"""
-    email: ""
-    password: ""
-    first_name: ""
-    last_name: ""
+    state_id: ""
+    name: ""

@@ -12,6 +12,7 @@ class BaseModel:
     """A class that defines a base class for inheritance\
     by other classes"""
     def __init__(self, *args, **kwargs):
+        """Creates class from class args to re-instantiate existing class"""
         if kwargs:
             for key, value in kwargs.items():
                 if key !=  "__class__":
